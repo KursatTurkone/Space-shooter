@@ -25,6 +25,7 @@ public class PlayerControl : MonoBehaviour
 
     void FixedUpdate()
     {
+        Debug.Log("moving"); 
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         vec = new Vector3(horizontal, 0, vertical);
